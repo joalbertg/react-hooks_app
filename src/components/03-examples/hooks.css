@@ -1,0 +1,19 @@
+body {
+  padding: 60px;
+  background-color: black;
+  color: white;
+}
+
+hr {
+  border-top: 1px solid rgba(255, 255, 255, .5);
+}
+
+.wraper-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  flex: 0 1 calc(50% - 1rem);
+}
+
