@@ -1,8 +1,10 @@
 # Hooks
 
-[The Breaking Bad API][breakingbadapi]
+- [The Breaking Bad API][breakingbadapi]
+- [useLayoutEffect][uselayouteffect]
 
 [breakingbadapi]: https://breakingbadapi.com/documentation
+[uselayouteffect]: https://es.reactjs.org/docs/hooks-reference.html#uselayouteffect
 
 ### Installs
 
