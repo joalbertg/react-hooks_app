@@ -34,9 +34,29 @@ docker-compose run app yarn
 │   │   │   ├── Message.js
 │   │   │   ├── SimpleForm.js
 │   │   │   └── effects.css
-│   │   └── 03-examples
-│   │       ├── MultipleCustomHooks.js
-│   │       └── hooks.css
+│   │   ├── 03-examples
+│   │   │   ├── MultipleCustomHooks.js
+│   │   │   └── hooks.css
+│   │   ├── 04-useRef
+│   │   │   ├── FocusScreen.js
+│   │   │   ├── RealExampleRef.js
+│   │   │   └── focus.css
+│   │   ├── 05-useLayoutEffect
+│   │   │   ├── Layout.js
+│   │   │   └── layout.css
+│   │   ├── 06-memos
+│   │   │   ├── CallbackHook.js
+│   │   │   ├── MemoHook.js
+│   │   │   ├── Memorize.js
+│   │   │   ├── ShowIncrement.js
+│   │   │   ├── Small.js
+│   │   │   └── memo.css
+│   │   └── 07-tarea-memo
+│   │       ├── Hijo.js
+│   │       ├── Padre.js
+│   │       └── styles.css
+│   ├── helpers
+│   │   └── heavyProcess.js
 │   ├── hooks
 │   │   ├── useCounter.js
 │   │   ├── useFetch.js
@@ -44,7 +64,7 @@ docker-compose run app yarn
 │   └── index.js
 └── yarn.lock
 
-6 directories, 19 files
+11 directories, 34 files
 ```
 
 ### Start project
