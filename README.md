@@ -2,9 +2,11 @@
 
 - [The Breaking Bad API][breakingbadapi]
 - [useLayoutEffect][uselayouteffect]
+- [useReducer][usereducer]
 
 [breakingbadapi]: https://breakingbadapi.com/documentation
 [uselayouteffect]: https://es.reactjs.org/docs/hooks-reference.html#uselayouteffect
+[usereducer]: https://es.reactjs.org/docs/hooks-reference.html#usereducer
 
 ### Installs
 
@@ -51,10 +53,18 @@ docker-compose run app yarn
 │   │   │   ├── ShowIncrement.js
 │   │   │   ├── Small.js
 │   │   │   └── memo.css
-│   │   └── 07-tarea-memo
-│   │       ├── Hijo.js
-│   │       ├── Padre.js
-│   │       └── styles.css
+│   │   ├── 07-tarea-memo
+│   │   │   ├── Hijo.js
+│   │   │   ├── Padre.js
+│   │   │   └── styles.css
+│   │   └── 08-useReducer
+│   │       ├── TodoAdd.js
+│   │       ├── TodoApp.js
+│   │       ├── TodoList.js
+│   │       ├── TodoListItem.js
+│   │       ├── intro-reducer.js
+│   │       ├── styles.css
+│   │       └── todoReducer.js
 │   ├── helpers
 │   │   └── heavyProcess.js
 │   ├── hooks
@@ -64,8 +74,18 @@ docker-compose run app yarn
 │   └── index.js
 └── yarn.lock
 
-11 directories, 34 files
+12 directories, 41 files
 ```
+
+### Screenshots
+
+#### TODO List with hooks
+
+<p align="center">
+  <kbd>
+    <img src="screenshots/todo-list.png" title="todo list"  width="600px" height="auto">
+  </kbd>
+</p>
 
 ### Start project
 

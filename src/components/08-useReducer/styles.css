@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding: 60px;
+}
+
+hr {
+  border-top: 1px solid rgba(255, 255, 255, .5);
+  margin: 1px 0;
+}
+
+.list-group-item {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.list-group-item p {
+  margin: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  flex: 0 1 60%;
+}
+
+.list-group-item button {
+  flex: 0 1 10%;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  flex: 0 1 80%;
+}
+
