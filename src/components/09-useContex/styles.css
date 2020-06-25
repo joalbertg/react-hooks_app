@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+hr {
+  border-top: 1px solid rgba(255, 255, 255, .5);
+}
+
+._404 {
+  display: flex;
+  height: calc(100vh - 20rem);
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+pre {
+  color: white;
+}
+

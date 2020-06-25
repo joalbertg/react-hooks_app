@@ -3,16 +3,25 @@
 - [The Breaking Bad API][breakingbadapi]
 - [useLayoutEffect][uselayouteffect]
 - [useReducer][usereducer]
+- [React Router - Quick Start] [react_touter_quik_start]
+- [React Router - <NavLink>][react_router_nav_link]
 
 [breakingbadapi]: https://breakingbadapi.com/documentation
 [uselayouteffect]: https://es.reactjs.org/docs/hooks-reference.html#uselayouteffect
 [usereducer]: https://es.reactjs.org/docs/hooks-reference.html#usereducer
+[react_touter_quik_start]: https://reacttraining.com/react-router/web/guides/quick-start
+[react_router_nav_link]: https://reacttraining.com/react-router/web/api/NavLink
 
 ### Installs
 
 With `package.json` and dependencies
 ```shell
 docker-compose run app yarn
+```
+
+without dependencies
+```shell
+docker-compose run app yarn add react-router-dom
 ```
 
 ### Project Structure
