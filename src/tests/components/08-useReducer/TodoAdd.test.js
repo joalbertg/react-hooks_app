@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { shallow } from 'enzyme';
-import { renderHook, act } from '@testing-library/react-hooks';
 
 import { TodoAdd } from '../../../components/08-useReducer/TodoAdd';
+
+jest.mock('react', () => {
+  const originReact = jest.requireActual('react');
+  //console.log(originReact);
+
+  return {
+    ...originReact,
+    useRef: jest.fn(),
+  };
+});
 
 describe('Test TodoAdd component', () => {
   const handleAddTodo = jest.fn();
@@ -22,6 +31,8 @@ describe('Test TodoAdd component', () => {
 
   test('Should is called handleAddTodo function', () => {
     const value = 'Learn Rails';
+
+    useRef.mockReturnValueOnce({ current: { select: jest.fn() } });
     wrapper.find('input').simulate('change', {
       target: {
         name: 'description',

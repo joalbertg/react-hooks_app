@@ -22,9 +22,8 @@ export const TodoAdd = ({handleAddTodo}) => {
     handleAddTodo(newTask);
     handleReset();
     // es mala practica llamar al DOM en componentes
-    //document.querySelector('input').select();
-    //TODO: uncomment
-    //inputRef.current.select();
+    // document.querySelector('input').select();
+    inputRef.current.select();
   }
 
   return(
