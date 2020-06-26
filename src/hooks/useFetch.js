@@ -20,7 +20,7 @@ export const useFetch = url => {
         .then(resp => resp.json())
         .then(data => {
 
-          setTimeout(() => {
+          //setTimeout(() => {
 
           // para setear el estado de manera segura
           if(isMounted.current) {
@@ -33,8 +33,15 @@ export const useFetch = url => {
             console.log('setState not was called!!!');
           }
 
-        }, 2000);
+        //}, 2000);
 
+        })
+        .catch(() => {
+          setState({
+            data: null,
+            loading: false,
+            error: 'Request not found.'
+          });
         });
   },[url]);
 

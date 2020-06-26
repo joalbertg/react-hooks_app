@@ -1,16 +1,31 @@
 # Hooks
 
 - [The Breaking Bad API][breakingbadapi]
+
+#### Hooks
 - [useLayoutEffect][uselayouteffect]
 - [useReducer][usereducer]
+
+#### React Router
 - [React Router - Quick Start] [react_touter_quik_start]
 - [React Router - <NavLink>][react_router_nav_link]
 
+#### Tests
+- [Enzyme][enzymejs]
+- [enzyme-to-json][enzyme_to_json]
+- [React Hooks Testing Library][react_hooks_testing]
+
 [breakingbadapi]: https://breakingbadapi.com/documentation
+
 [uselayouteffect]: https://es.reactjs.org/docs/hooks-reference.html#uselayouteffect
 [usereducer]: https://es.reactjs.org/docs/hooks-reference.html#usereducer
+
 [react_touter_quik_start]: https://reacttraining.com/react-router/web/guides/quick-start
 [react_router_nav_link]: https://reacttraining.com/react-router/web/api/NavLink
+
+[enzymejs]: https://enzymejs.github.io/enzyme/
+[enzyme_to_json]: https://www.npmjs.com/package/enzyme-to-json
+[react_hooks_testing]: https://react-hooks-testing-library.com/
 
 ### Installs
 
@@ -22,6 +37,8 @@ docker-compose run app yarn
 without dependencies
 ```shell
 docker-compose run app yarn add react-router-dom
+docker-compose run app yarn add enzyme enzyme-adapter-react-16 --dev
+docker-compose run app yarn add @testing-library/react-hooks --dev
 ```
 
 ### Project Structure
