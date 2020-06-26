@@ -5,7 +5,7 @@ const REMOVE_TODO = 'REMOVE_TODO';
 const todoReducer = (state = [], action) => {
   switch(action.type) {
     case ADD_TODO:
-      return [...state, { ...action.payload, node: false }];
+      return [...state, { ...action.payload, done: false }];
     case TOGGLE_TODO:
       return state.map(todo => {
         if(todo.id === action.payload.id) {
