@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests TodoListItem component Should display correctly 1`] = `
+<Fragment>
+  <li
+    className="list-group-item"
+    onClick={[Function]}
+  >
+    <p
+      className="complete"
+    >
+      1
+      . 
+      Learn React
+    </p>
+    <button
+      className="btn btn-danger"
+      onClick={[Function]}
+    >
+      X
+    </button>
+  </li>
+  <hr />
+</Fragment>
+`;
+
+exports[`Tests TodoListItem component Should have called handleRemove function 1`] = `
+<Fragment>
+  <li
+    className="list-group-item"
+    onClick={[Function]}
+  >
+    <p
+      className=""
+    >
+      2
+      . 
+      Learn Redux
+    </p>
+    <button
+      className="btn btn-danger"
+      onClick={[Function]}
+    >
+      X
+    </button>
+  </li>
+  <hr />
+</Fragment>
+`;
+
+exports[`Tests TodoListItem component Should have called handleToggle function 1`] = `
+<Fragment>
+  <li
+    className="list-group-item"
+    onClick={[Function]}
+  >
+    <p
+      className=""
+    >
+      2
+      . 
+      Learn Redux
+    </p>
+    <button
+      className="btn btn-danger"
+      onClick={[Function]}
+    >
+      X
+    </button>
+  </li>
+  <hr />
+</Fragment>
+`;
+
+exports[`Tests TodoListItem component Should have complete class if todo.done is true 1`] = `
+<Fragment>
+  <li
+    className="list-group-item"
+    onClick={[Function]}
+  >
+    <p
+      className="complete"
+    >
+      1
+      . 
+      Learn React
+    </p>
+    <button
+      className="btn btn-danger"
+      onClick={[Function]}
+    >
+      X
+    </button>
+  </li>
+  <hr />
+</Fragment>
+`;
