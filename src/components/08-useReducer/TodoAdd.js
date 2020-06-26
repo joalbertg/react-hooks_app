@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import { useForm } from '../../hooks/useForm';
 
@@ -6,6 +6,8 @@ export const TodoAdd = ({handleAddTodo}) => {
   const [{ description }, handleInputChange, handleReset] = useForm({
     description: ''
   });
+
+  const inputRef = useRef();
 
   const handleForm = event => {
     event.preventDefault();
@@ -19,7 +21,10 @@ export const TodoAdd = ({handleAddTodo}) => {
 
     handleAddTodo(newTask);
     handleReset();
-    document.querySelector('input').select();
+    // es mala practica llamar al DOM en componentes
+    //document.querySelector('input').select();
+    //TODO: uncomment
+    //inputRef.current.select();
   }
 
   return(
@@ -32,6 +37,7 @@ export const TodoAdd = ({handleAddTodo}) => {
         className="mt-2"
       >
         <input
+          ref={inputRef}
           className="form-control"
           type="text"
           name="description"
