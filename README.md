@@ -14,6 +14,7 @@
 - [Enzyme][enzymejs]
 - [enzyme-to-json][enzyme_to_json]
 - [React Hooks Testing Library][react_hooks_testing]
+- [React Router Testing][react_router_testing]
 
 [breakingbadapi]: https://breakingbadapi.com/documentation
 
@@ -26,6 +27,7 @@
 [enzymejs]: https://enzymejs.github.io/enzyme/
 [enzyme_to_json]: https://www.npmjs.com/package/enzyme-to-json
 [react_hooks_testing]: https://react-hooks-testing-library.com/
+[react_router_testing]: https://reacttraining.com/react-router/web/guides/testing
 
 ### Installs
 
@@ -38,12 +40,13 @@ without dependencies
 ```shell
 docker-compose run app yarn add react-router-dom
 docker-compose run app yarn add enzyme enzyme-adapter-react-16 --dev
+docker-compose run app yarn add enzyme-to-json --dev
 docker-compose run app yarn add @testing-library/react-hooks --dev
 ```
 
 ### Project Structure
 
-> run `tree -I "node_modules|public"`
+> run `tree -I "node_modules|public|screenshots"`
 ```shell
 .
 ├── Dockerfile
@@ -83,24 +86,73 @@ docker-compose run app yarn add @testing-library/react-hooks --dev
 │   │   │   ├── Hijo.js
 │   │   │   ├── Padre.js
 │   │   │   └── styles.css
-│   │   └── 08-useReducer
-│   │       ├── TodoAdd.js
-│   │       ├── TodoApp.js
-│   │       ├── TodoList.js
-│   │       ├── TodoListItem.js
-│   │       ├── intro-reducer.js
-│   │       ├── styles.css
-│   │       └── todoReducer.js
+│   │   ├── 08-useReducer
+│   │   │   ├── TodoAdd.js
+│   │   │   ├── TodoApp.js
+│   │   │   ├── TodoList.js
+│   │   │   ├── TodoListItem.js
+│   │   │   ├── intro-reducer.js
+│   │   │   ├── styles.css
+│   │   │   └── todoReducer.js
+│   │   └── 09-useContex
+│   │       ├── AboutScreen.js
+│   │       ├── AppRouter.js
+│   │       ├── HomeScreen.js
+│   │       ├── LoginScreen.js
+│   │       ├── MainApp.js
+│   │       ├── NavBar.js
+│   │       ├── PageNotFound.js
+│   │       ├── UserContext.js
+│   │       └── styles.css
 │   ├── helpers
 │   │   └── heavyProcess.js
 │   ├── hooks
 │   │   ├── useCounter.js
 │   │   ├── useFetch.js
 │   │   └── useForm.js
-│   └── index.js
+│   ├── index.js
+│   ├── setupTests.js
+│   └── tests
+│       ├── HookApp.test.js
+│       ├── __snapshots__
+│       │   └── HookApp.test.js.snap
+│       ├── components
+│       │   ├── 03-examples
+│       │   │   ├── MultipleCustomHooks.test.js
+│       │   │   └── __snapshots__
+│       │   │       └── MultipleCustomHooks.test.js.snap
+│       │   ├── 04-useRef
+│       │   │   ├── RealExampleRef.test.js
+│       │   │   └── __snapshots__
+│       │   │       └── RealExampleRef.test.js.snap
+│       │   ├── 08-useReducer
+│       │   │   ├── TodoAdd.test.js
+│       │   │   ├── TodoApp.test.js
+│       │   │   ├── TodoList.test.js
+│       │   │   ├── TodoListItem.test.js
+│       │   │   ├── __snapshots__
+│       │   │   │   ├── TodoAdd.test.js.snap
+│       │   │   │   ├── TodoApp.test.js.snap
+│       │   │   │   ├── TodoList.test.js.snap
+│       │   │   │   └── TodoListItem.test.js.snap
+│       │   │   └── todoReducer.test.js
+│       │   └── 09-useContex
+│       │       ├── AppRouter.test.js
+│       │       ├── HomeScreen.test.js
+│       │       ├── LoginScreen.test.js
+│       │       └── __snapshots__
+│       │           ├── AppRouter.test.js.snap
+│       │           ├── HomeScreen.test.js.snap
+│       │           └── LoginScreen.test.js.snap
+│       ├── fixtures
+│       │   └── demoTodos.js
+│       └── hooks
+│           ├── useCounter.test.js
+│           ├── useFetch.test.js
+│           └── useForm.test.js
 └── yarn.lock
 
-12 directories, 41 files
+26 directories, 76 files
 ```
 
 ### Screenshots

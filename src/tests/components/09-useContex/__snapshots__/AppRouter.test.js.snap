@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests AppRouter component Should display correctly 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand-lg navbar-dark bg-dark"
+  >
+    <a
+      className="navbar-brand"
+      href="/"
+      onClick={[Function]}
+    >
+      useContex
+    </a>
+    <button
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      data-target="#navbarSupportedContent"
+      data-toggle="collapse"
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarSupportedContent"
+    >
+      <ul
+        className="navbar-nav mr-auto"
+      >
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current="page"
+            className="nav-link active"
+            href="/"
+            onClick={[Function]}
+            style={Object {}}
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current={null}
+            className="nav-link"
+            href="/about"
+            onClick={[Function]}
+          >
+            About
+          </a>
+        </li>
+        <li
+          className="nav-item"
+        >
+          <a
+            aria-current={null}
+            className="nav-link"
+            href="/login"
+            onClick={[Function]}
+          >
+            Login
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>,
+  <div
+    className="container"
+  >
+    Array [
+      <h1>
+        HomeScreen
+      </h1>,
+      <hr />,
+      <pre>
+        {
+   "name": "joalbert",
+   "email": "joalbertgonzalez@gmail.com"
+}
+      </pre>,
+    ]
+  </div>,
+]
+`;
