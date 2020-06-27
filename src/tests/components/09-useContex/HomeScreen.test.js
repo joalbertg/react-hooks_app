@@ -6,7 +6,7 @@ import { UserContext } from '../../../components/09-useContex/UserContext';
 
 describe('Tests HomeScreen component', () => {
   const user = {
-    user: 'Joalbert',
+    name: 'joalbert',
     email: 'joalbertgonzalez@gmail.com'
   };
 
